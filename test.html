@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="./profile-pic.png" alt="profile-pic" id="pp"> -->
+ <canvas id="myCanvas"></canvas>   
+</body>
+<script>
+//     // const canvas = document.getElementById("myCanvas");
+//     // canvas.height = window.innerHeight;
+//     // canvas.width = window.innerWidth;
+//     // let ctx = canvas.getContext("2d");
+//     // ctx.fillStyle = "#FF0000";
+//     // ctx.fillRect(0,0,5000,5000)
+
+
+  
+ var canvas = document.getElementById("myCanvas");
+ canvas.height = 500;
+ canvas.width = 500;
+ var ctx = canvas.getContext("2d");
+//  //ctx.beginPath();
+// ctx.arc(95, 50,40,0, 2 * Math.PI);
+// ctx.stroke();
+// ctx.fillStyle('royalblue');
+// ctx.fillRect(0,0,100,100);
+// ctx.moveTo(0,0);
+// ctx.lineTo(200,200);
+// ctx.stroke();
+// ctx.moveTo(0,0);
+// ctx.lineTo(200,200);
+// ctx.stroke();
+// ctx.fillStyle = "yellow";
+// ctx.fillRect(100,100,200,200);
+// ctx.arc(200,200,200,0,270);
+// ctx.moveTo(0,0);
+// ctx.stroke();
+// ctx.fillStyle = "lime"
+// ctx.fillRect(300,300,100,100);
+// ctx.arc(350,350,100,0,45);
+// ctx.moveTo(0,0);
+// ctx.stroke();
+// ctx.moveTo(0,0);
+// ctx.lineTo(1000,1000);
+// ctx.stroke();
+
+
+//create gradient
+//let grd = ctx.createLinearGradient(400,400,200,0);
+// grd.addColorStop(0,'blue');
+// grd.addColorStop(1,"purple");
+
+// //Fill with gradient
+// ctx.fillStyle = grd;
+// ctx.fillRect(10,10,150,80);
+
+
+//Using createRadialGradient
+
+// let rgrd = ctx.createRadialGradient(75,50,5,90,60,100);
+// grd.addColorStop(0,"pink");
+// grd.addColorStop(1,"deeppink");
+
+// //Fill with gradient
+// ctx.fillStyle = rgrd;
+// ctx.fillRect(300,300,300,300);
+
+// Create gradient
+var rgrd = ctx.createRadialGradient(75, 50, 5, 30, 60, 100);
+rgrd.addColorStop(0, "red");
+rgrd.addColorStop(1, "white");
+
+// Fill with gradient
+// ctx.fillStyle = rgrd;
+// ctx.fillRect(10, 100, 150, 80);
+// //using fillText
+// var ctx = canvas.getContext("2d");
+// ctx.font = "30px Arial";
+// ctx.fillText("Hello World", 10, 50);
+
+// //Using StrokeText()
+// ctx.font = "30px Arial";
+// ctx.strokeText("Hello World",50,50);
+
+// //Add color and Center Text
+// ctx.font = "30px Comic Sans MS";
+// ctx.fillStyle = "red";
+// ctx.textAlign = "center";
+// ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+
+// window.onload = function () {
+//     img = document.getElementById('pp');
+//     ctx.drawImage(img,100,100);
+// }
+// let canvas = document.getElementById("myCanvas");
+let ctx = canvas.getContext("2d");
+let bthHeight = 40;
+let btnWidth = 100;
+ctx.fillStyle = "lightgrey";
+ctx.fillRect(20,20,btnHeight,btnWidth);
+
+//Add Button innerText
+ctx.font = "30px Comic Sans MS";
+ctx.fillStyle = "black";
+ctx.textAlign = "center";
+ctx.fillText("Login",btnHeight/2,btnWidth/2);
+</script>
+</html>
